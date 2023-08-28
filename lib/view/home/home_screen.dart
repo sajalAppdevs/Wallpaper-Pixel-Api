@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wallpaper/res/constants.dart';
+import 'package:wallpaper/view/home/components/app_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,12 +11,8 @@ class HomeScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            SizedBox(height: defaultPadding/2,),
-            Row(
-              children: [
-
-              ],
-            )
+            const SizedBox(height: defaultPadding/2,),
+            MyAppBar(),
           ],
         ),
       ),
